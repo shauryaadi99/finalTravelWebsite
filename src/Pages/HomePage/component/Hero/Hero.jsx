@@ -42,7 +42,10 @@ const Hero = () => {
             zIndex: -1,
           }}
         >
-          <source src="/heroback.mp4" type="video/mp4" />
+          <source
+            src="https://firebasestorage.googleapis.com/v0/b/connecting-campuses.appspot.com/o/heroback.mp4?alt=media&token=de803abc-9067-4837-87e5-83b8c6eec8a8"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
 
