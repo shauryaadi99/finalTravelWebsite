@@ -1,0 +1,63 @@
+.container{
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+    aspect-ratio: 4/3;
+    width: 30%;
+    min-width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+    width: 100%;
+    aspect-ratio: 14/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.textContainer{
+    width: 100%;
+    padding: 20px;
+}
+
+.textContainer h3{
+    margin: 0 ;
+}
+
+.textContainer p{
+    margin: 0 ;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.textContainer h6{
+    font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 90%;
+    }
+    
+}
+

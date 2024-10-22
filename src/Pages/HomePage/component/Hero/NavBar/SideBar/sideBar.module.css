@@ -1,0 +1,84 @@
+/* Sidebar container */
+.sideBar {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: black;
+  position: absolute;
+  display: none; /* Initially hidden */
+
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    display: flex; /* Show sidebar on smaller screens */
+  }
+}
+
+/* Background styling for sidebar */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  min-height: 100dvh;
+  background-color: #fff;
+  z-index: 999; /* Ensures the sidebar stays above other elements */
+}
+
+/* Links container */
+.links {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 30px;
+  padding-top: 120px;
+  gap: 20px; /* Space between links */
+  z-index: 1000; /* Keeps the links above other elements */
+}
+
+/* Individual link styling */
+.links a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black; /* You can adjust this color based on preference */
+}
+
+/* Button to toggle sidebar */
+.linksButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 999; /* Ensures the button stays on top of the sidebar */
+}
+
+/* Toggle animation */
+.toggle {
+  transition: 0.3s ease; /* Smooth transition for opening/closing sidebar */
+}
+
+
+.subLink{
+  font-size: 22px !important;
+  padding-left: 20px;
+}
+
+.subMenu{
+  display: flex;
+  flex-direction: column;
+}
+
+.subMenu a{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
